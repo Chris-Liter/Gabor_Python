@@ -89,7 +89,7 @@ mod = SourceModule(kernel_code)
 apply_gabor = mod.get_function("applyGaborCUDA")
 
 # Cargar imagen y preparar datos
-img = cv2.imread("/home/jorge/Desktop/ComputacionParalela/PyCuda/1/imagenArbol.jpg")
+img = cv2.imread("./imagenArbol.jpg")
 if img is None:
     raise Exception("No se pudo cargar la imagen")
 
